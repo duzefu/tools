@@ -1,0 +1,10 @@
+[user]
+	email = yanhui.liu@dniserver.dnish.net
+	name = yanhui.liu
+	editor = vim
+[core]
+	editor = vim
+[color]
+	status = auto
+	branch = auto
+	ui     = auto

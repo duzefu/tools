@@ -1,0 +1,12 @@
+#!/bin/sh
+
+FILE=$1
+USER=`whoami`
+NEW_FILE=
+if [ "x${NEW_FILE}" = "x" ]; then
+	dnishare get ${FILE}
+fi
+
+NEW_FILE=`ls /home/dnishare | grep ${FILE}|tail -1`
+cp /home/dnishare/${NEW_FILE} .
+mv ${NEW_FILE} ${FILE}
